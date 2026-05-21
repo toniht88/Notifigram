@@ -52,9 +52,6 @@ It sits on his desk and notifies him when needed.
 | GND       | GND        | Common ground (ESP32 + LEDs + PSU)   |
 | —         | 5V         | From dedicated PSU, NOT from ESP32   |
 
-> ⚠️ Do **not** power the LED matrix from the ESP32's 5V pin.
-> 256 WS2812B LEDs at full white can draw ~15A. Use a dedicated 5V supply
-> and tie all grounds together.
 
 The matrix is configured as `NEO_MATRIX_TOP + NEO_MATRIX_LEFT +
 NEO_MATRIX_COLUMNS + NEO_MATRIX_ZIGZAG`. If your panel has a different
